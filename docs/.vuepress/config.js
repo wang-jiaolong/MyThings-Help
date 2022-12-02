@@ -1,6 +1,8 @@
 const baiduCode = require('./config/baiduCode.js'); // 百度统计hm码
 const htmlModules = require('./config/htmlModules.js');
 
+const sidebar =  require('./config/sidebar.js');
+
 
 module.exports = {
 
@@ -19,7 +21,7 @@ module.exports = {
   // 主题配置
   themeConfig: {
     nav:[
-      { text: 'About', link: '/pages/4fc572/' }
+      // { text: 'About', link: '/about/' }
     ],
     pageButton:false,
     sidebarDepth: 0, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
@@ -32,8 +34,60 @@ module.exports = {
     // editLinkText: '编辑',
  
     // 以下配置是Vdoing主题改动的和新增的配置
-    sidebar: { mode: 'structuring', collapsable: false }, // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
+    // sidebar: { mode: 'structuring', collapsable: false }, // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
+    sidebar:[
+      {
+        title: 'About',   // 必要的
+        collapsable: false, // 可选的, 默认值是 true,
+        children: [
+          ['/01.page/01.About/01.About',"👉 About"],
+          ['/01.page/01.About/02.使用手册',"📄 使用手册"],
+          ['/01.page/01.About/03.FQA',"⚡ FQA"]
 
+        ]
+      },
+      {
+        title: '开发',   // 必要的
+        collapsable: false, // 可选的, 默认值是 true,
+        children: [
+          ['/01.page/02.开发/01.更新日志',"🧾 更新日志"]
+        ]
+      },
+      {
+        title: '文章',   // 必要的
+        collapsable: false, // 可选的, 默认值是 true,
+        children: [
+          ['/01.page/04.文章/03.从idea到上线',"📃 从idea到上线"]
+        ]
+      },
+      {
+        title: '需求 & Bug',   // 必要的
+        collapsable: false, // 可选的, 默认值是 true,
+        children: [
+          ['/01.page/08.需求 & Bug/01.需求',"💡 需求"],
+          ['/01.page/08.需求 & Bug/02.Bug',"🔧 Bug"]
+
+        ]
+      },
+      {
+        title: '隐私 & 协议',   // 必要的
+        collapsable: false, // 可选的, 默认值是 true,
+        children: [
+          ['/01.page/09.隐私与协议/01.隐私政策',"🔐 隐私政策"],
+          ['/01.page/09.隐私与协议/02.用户协议',"📝 用户协议"]
+
+        ]
+      },
+      {
+        title: '链接',   // 必要的
+        collapsable: false, // 可选的, 默认值是 true,
+        children: [
+          ['https://support.qq.com/product/465371',"📧 留言板"]
+
+        ]
+      }
+
+    ],
     // sidebarOpen: false, // 初始状态是否打开侧边栏，默认true
     updateBar: { // 最近更新栏
       showToArticle: false, // 显示到文章页底部，默认true
