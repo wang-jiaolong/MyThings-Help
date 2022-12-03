@@ -42,7 +42,7 @@ module.exports = {
         children: [
           ['/01.page/01.About/01.About',"👉 About"],
           ['/01.page/01.About/02.使用手册',"📄 使用手册"],
-          ['/01.page/01.About/03.FQA',"⚡ FQA"]
+          ['/01.page/01.About/03.FAQ',"⚡ FAQ"]
 
         ]
       },
