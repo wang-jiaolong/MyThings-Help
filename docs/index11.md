@@ -23,7 +23,7 @@ postList: none
 ---
 
 <style>
-.become-sponsor {a
+.become-sponsor {
   padding: 8px 20px;
   display: inline-block;
   color: #11a8cd;
