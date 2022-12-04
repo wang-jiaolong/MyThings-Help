@@ -21,7 +21,7 @@ module.exports = {
   // 主题配置
   themeConfig: {
     nav:[
-      // { text: 'About', link: '/about/' }
+      // { text: 'About', link: '/' }
     ],
     pageButton:false,
     sidebarDepth: 0, // 侧边栏显示深度，默认1，最大2（显示到h3标题）

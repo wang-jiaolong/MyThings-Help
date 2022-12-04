@@ -1,5 +1,5 @@
 ---
-home: true
+home: false
 heroImage: /img/logo.png
 heroText: 「物品指南」
 tagline: 「物品指南」 - 关于生活的备忘录
@@ -23,7 +23,7 @@ postList: none
 ---
 
 <style>
-.become-sponsor {
+.become-sponsor {a
   padding: 8px 20px;
   display: inline-block;
   color: #11a8cd;
